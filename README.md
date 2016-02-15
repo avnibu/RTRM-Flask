@@ -9,6 +9,6 @@ Following frameworks are used on top of Python:
 - [Bootstrap](http://getbootstrap.com/) to present the UI nicely
 - [jQuery](http://jquery.com/) to post and display form data
 
-A running sample can be found at http://avni.pythonaywhere.com
+A running sample can be found at http://avni.pythonanywhere.com
 
 Please be gentle and don't try to break it.
