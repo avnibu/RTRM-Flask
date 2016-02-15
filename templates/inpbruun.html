@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bruun Sea Level Rise Calc App</title>
+    <title>Bruun App</title>
 
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -49,21 +49,22 @@
 
       <div class="jumbotron">
 
-        <h1>Bruun App</h1>
+        <h2>Bruun Sea Level Rise Calculation App</h2>
+        <p><small>Inspiration by Francisco Chaves</small></p>
         <img src="../static/BruunScheme.jpg" class="img-responsive" alt="Bruun Scheme">
         <form class="form-signin">
         <label for="SeaLevelRise" class="sr-only">S:</label>
-        <input type="text" name="SeaLevelRise" id="SeaLevelRise" class="form-control" placeholder="S: Sea Level Rise [m]" required autofocus>
+        <input type="text" name="SeaLevelRise" id="SeaLevelRise" class="form-control" placeholder="Sea Level Rise [m]" required autofocus>
         <label for="DepthofClosure" class="sr-only">hc:</label>
-        <input type="text" name="DepthofClosure" id="DepthofClosure" class="form-control" placeholder="hc: Depth of Closure [m]" required autofocus>
+        <input type="text" name="DepthofClosure" id="DepthofClosure" class="form-control" placeholder="Depth of Closure [m]" required autofocus>
         <label for="BermHeight" class="sr-only">B:</label>
-        <input type="text" name="BermHeight" id="BermHeight" class="form-control" placeholder="B: Beach berm height (before SLR) [m]" required autofocus>
+        <input type="text" name="BermHeight" id="BermHeight" class="form-control" placeholder="Beach berm height (before SLR) [m]" required autofocus>
         <label for="Extent" class="sr-only">L:</label>
-        <input type="text" name="Extent" id="Extent" class="form-control" placeholder="L: Extent of the active zone [m]" required autofocus>
+        <input type="text" name="Extent" id="Extent" class="form-control" placeholder="Extent of the active zone [m]" required autofocus>
         <button id="btnCalcBruun" class="btn btn-lg btn-primary btn-block" type="button">Calculate</button>
         </form>
 
-        <div id=CalcResult><h1>{{CalcResult}}</h1></div>
+        <div id=CalcResult></div>
 
       </div>
 
