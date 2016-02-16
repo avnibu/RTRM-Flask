@@ -6,7 +6,6 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-    <link href="../static/calcbruun.css" rel="stylesheet">
 
   </head>
 
@@ -41,7 +40,7 @@
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="/">Home</a></li>
             <li role="presentation" class="active"><a href="#">Bruun</a></li>
-            <li role="presentation"><a href="#">Link 2</a></li>
+            <li role="presentation"><a href="https://github.com/avnibu/RTRM-Flask">Github</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Bruun App</h3>
@@ -49,22 +48,80 @@
 
       <div class="jumbotron">
 
-        <h2>Bruun Sea Level Rise Calculation App</h2>
+        <h2>Bruun's Erosion due to Sea Level Rise</h2>
         <p><small>Inspiration by Francisco Chaves</small></p>
         <img src="../static/BruunScheme.jpg" class="img-responsive" alt="Bruun Scheme">
-        <form class="form-signin">
-        <label for="SeaLevelRise" class="sr-only">S:</label>
-        <input type="text" name="SeaLevelRise" id="SeaLevelRise" class="form-control" placeholder="Sea Level Rise [m]" required autofocus>
-        <label for="DepthofClosure" class="sr-only">hc:</label>
-        <input type="text" name="DepthofClosure" id="DepthofClosure" class="form-control" placeholder="Depth of Closure [m]" required autofocus>
-        <label for="BermHeight" class="sr-only">B:</label>
-        <input type="text" name="BermHeight" id="BermHeight" class="form-control" placeholder="Beach berm height (before SLR) [m]" required autofocus>
-        <label for="Extent" class="sr-only">L:</label>
-        <input type="text" name="Extent" id="Extent" class="form-control" placeholder="Extent of the active zone [m]" required autofocus>
+
+        <!-- white space -->
+        <div style="height:50px;"></div>
+
+        <form class="form-horizontal">
+        <fieldset>
+
+        <!-- Form Name -->
+        <legend>Input Data</legend>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="SeaLevelRise">Sea Level Rise</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">S:</span>
+              <input id="SeaLevelRise" name="SeaLevelRise" class="form-control" placeholder="Sea Level Rise [m]" type="text" required="">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="DepthofClosure">Depth of Closure</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">hc:</span>
+              <input id="DepthofClosure" name="DepthofClosure" class="form-control" placeholder="Depth of Closure [m]" type="text" required="">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="BermHeight">Berm Height</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">B: </span>
+              <input id="BermHeight" name="BermHeight" class="form-control" placeholder="Beach Berm Height (before SLR) [m]" type="text" required="">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Extent">Extent of Active Zone</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">L:</span>
+              <input id="Extent" name="Extent" class="form-control" placeholder="Extent of Active Beach Zone [m]" type="text" required="">
+            </div>
+
+          </div>
+        </div>
+
+        </fieldset>
+
         <button id="btnCalcBruun" class="btn btn-lg btn-primary btn-block" type="button">Calculate</button>
+
         </form>
 
+        <!-- white space -->
+        <div style="height:50px;"></div>
+
+        <fieldset>
+        <legend>Calculation Results</legend>
         <div id=CalcResult></div>
+        </fiendset>
 
       </div>
 
