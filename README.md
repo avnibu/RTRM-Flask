@@ -7,6 +7,7 @@ http://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-
 Following frameworks are used on top of Python:
 - [Flask](http://flask.pocoo.org/) for the UI framework
 - [Bootstrap](http://getbootstrap.com/) to present the UI nicely
+  - [Bootsnip](http://bootsnipp.com/forms) to generate the input form
 - [jQuery](http://jquery.com/) to post and display form data
 
 A running sample can be found at http://avni.pythonanywhere.com. Please be gentle and don't try to break it.
