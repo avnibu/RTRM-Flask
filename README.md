@@ -21,7 +21,7 @@ Clone the repository in a folder of your preference.
 
     git clone https://github.com/avnibu/RTRM-Flask.git
 
-create your virtual environment and activate
+Create your virtual environment and activate
 
     cd RTRM-Flask/
     virtualenv venv
@@ -30,3 +30,10 @@ create your virtual environment and activate
 Install prerequisites
 
     pip install -r requirements.txt
+
+## Starting the server
+Run the server with the command
+
+    python bruun.py
+
+Point your browser to http://127.0.0.1:5000/
